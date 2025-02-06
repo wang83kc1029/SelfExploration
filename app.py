@@ -25,7 +25,7 @@ if st.button("分析故事 / Analyze story"):
 
     {user_story}
     
-    use English to respond when the story is in English。
+    use English to respond only when the story is in English。
     """
 
     result = (
