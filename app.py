@@ -21,12 +21,11 @@ with st.expander("Example Story"):
         st.text(file.read())
 
 if st.button("分析故事 / Analyze story"):
-    prompt = f"""
-    這是我的故事: 
-    {user_story}
-    我的故事裡面有哪些比較負面的潛在信念呢？
+    prompt = f"""我的故事裡面有哪些比較負面的潛在信念呢？
 
-    如果我故事的語言是英文，用英文回應我，否則用中文。
+    {user_story}
+    
+    use English to respond when the story is in English。
     """
 
     result = (
